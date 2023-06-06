@@ -1,9 +1,13 @@
 {
   "name": "use-remaining-time",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "React hook that returns remaining time in hh:mm:ss format",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
   "scripts": {
     "changeset": "changeset",
     "build": "tsc",
