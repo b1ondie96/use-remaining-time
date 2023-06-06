@@ -1,5 +1,11 @@
 # use-remaining-time
 
+## 1.0.6
+
+### Patch Changes
+
+- updated readme
+
 ## 1.0.5
 
 ### Patch Changes

@@ -17,9 +17,7 @@ npm i use-remaining-time
 
 ```jsx
 const Timer = () => {
-  const hourCountdown = Math.round(
-    (Date.now() - Date.now() - 60 * 60 * 1000) / 1000
-  );
+  const hourCountdown = 60 * 60;
   const { timeString, secondsRemaining, isPaused, resetTimer, setIsPaused } =
     useRemainingTime(hourCountdown, false, () =>
       console.log("Countdown finished")
