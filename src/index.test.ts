@@ -48,7 +48,8 @@ describe("timer", () => {
     expect(result.current.isPaused).toBe(true);
   });
   it("timer should be paused on 0 seconds remaining", () => {
-    const { result } = renderHook(() => useRemainingTime(0, false));
+    const { result } = renderHook(() => useRemainingTime(1, false));
+    act(() => jest.advanceTimersByTime(1000));
     expect(result.current.isPaused).toBe(true);
   });
   it("should call onCompleted on 0 seconds", () => {
