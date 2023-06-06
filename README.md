@@ -34,6 +34,28 @@ const Timer = () => {
 };
 ```
 
+### Configuration
+
+Hook takes folowing options
+
+| Name             | Type      | Description                                             |
+| ---------------- | --------- | ------------------------------------------------------- |
+| `initialSeconds` | Number    | Start of timer in second                                |
+| `initialPaused`  | Boolean   | Initial pause state                                     |
+| `onComplete`     | Function? | Callback when timer hits 0 seconds remaining (optional) |
+
+### Properties
+
+Hook returns following properties:
+
+| Name               | Type     | Description                                                                 |
+| ------------------ | -------- | --------------------------------------------------------------------------- |
+| `timeString`       | String   | Time remaining in hh:mm:ss format                                           |
+| `secondsRemaining` | Number   | The time remaining in seconds                                               |
+| `isPaused`         | Boolean  | Whether the timer is currently ticking down                                 |
+| `setIsPaused`      | Function | Function to pause or resume timer. Requires `boolean` parameter             |
+| `resetTimer`       | Function | A function to reset timer to `initialSeconds` accepts `boolean` parameter . |
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
