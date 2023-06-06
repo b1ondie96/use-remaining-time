@@ -51,6 +51,7 @@ export function useRemainingTime(
   React.useEffect(() => {
     setTimeString(formatTime(Math.abs(initialSeconds)));
     setSecondsRemaining(Math.abs(initialSeconds));
+    setIsPaused(initialPaused);
   }, [initialSeconds]);
 
   const resetTimer = React.useCallback(
