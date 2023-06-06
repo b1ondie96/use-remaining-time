@@ -52,7 +52,7 @@ describe("timer", () => {
     act(() => jest.advanceTimersByTime(1000));
     expect(result.current.isPaused).toBe(true);
   });
-  it("should call onCompleted on 0 seconds", () => {
+  it("should call onComplete on 0 seconds", () => {
     const fn = jest.fn();
     const { result } = renderHook(() => useRemainingTime(0, false, fn));
     expect(fn).toHaveBeenCalled();

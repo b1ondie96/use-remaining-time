@@ -19,12 +19,12 @@ export interface UseTimerState {
 /**
  * @param initialSeconds Start of timer.
  * @param initialPaused Initial state, if true, the timer will not tick.
- * @param onCompleted Callback when timer hits 0 seconds remaining.
+ * @param onComplete Callback when timer hits 0 seconds remaining.
  */
 export function useRemainingTime(
   initialSeconds: number,
   initialPaused: boolean,
-  onCompleted?: () => void
+  onComplete?: () => void
 ): UseTimerState {
   const [secondsRemaining, setSecondsRemaining] = React.useState(
     Math.abs(initialSeconds)
@@ -44,7 +44,7 @@ export function useRemainingTime(
       return () => clearTimeout(timer);
     } else if (secondsRemaining === 0 && !isPaused) {
       setIsPaused(true);
-      if (onCompleted) onCompleted();
+      if (onComplete) onComplete();
     }
   }, [isPaused, secondsRemaining]);
 
