@@ -1,6 +1,6 @@
 {
   "name": "use-remaining-time",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React hook that returns remaining time in hh:mm:ss format",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "tsc",
     "test": "jest",
     "prepublish": "changeset version && npm run build && npm run test",
-    "publish": "changeset publish"
+    "release": "changeset publish"
   },
   "homepage": "https://github.com/b1ondie96/use-remaining-time",
   "repository": {

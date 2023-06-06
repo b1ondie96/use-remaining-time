@@ -1,5 +1,11 @@
 # use-remaining-time
 
+## 1.0.5
+
+### Patch Changes
+
+- fixed spelling
+
 ## 1.0.4
 
 ### Patch Changes
