@@ -1,0 +1,16 @@
+{
+  "name": "use-remaining-time",
+  "version": "1.0.0",
+  "description": "React hook that returns remaining time in hh:mm:ss format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timer",
+    "remaining",
+    "time"
+  ],
+  "author": "Roman Holota",
+  "license": "MIT"
+}
