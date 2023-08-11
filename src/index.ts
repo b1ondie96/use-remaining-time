@@ -26,11 +26,12 @@ export function useRemainingTime(
   initialPaused: boolean,
   onComplete?: () => void
 ): UseTimerState {
+  const roundedSeconds = Math.round(Math.abs(initialSeconds))
   const [secondsRemaining, setSecondsRemaining] = React.useState(
-    Math.abs(initialSeconds)
+    roundedSeconds
   );
   const [timeString, setTimeString] = React.useState(
-    formatTime(Math.abs(initialSeconds))
+    formatTime(roundedSeconds)
   );
   const [isPaused, setIsPaused] = React.useState(initialPaused);
 

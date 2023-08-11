@@ -1,5 +1,17 @@
 # use-remaining-time
 
+## 1.0.11
+
+### Patch Changes
+
+- 2c58447: Initial time is now rounded
+
+## 1.0.10
+
+### Patch Changes
+
+- fix pause bug on inittimer change
+
 ## 1.0.9
 
 ### Patch Changes
